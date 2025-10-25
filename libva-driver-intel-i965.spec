@@ -1,7 +1,7 @@
 %define	libva_ver	2.4.0
-Summary:	VA driver for Intel G45 and HD Graphics family
-Summary(pl.UTF-8):	Sterownik VA do kart Intela z rodziny G45 i HD Graphics
-Name:		libva-driver-intel
+Summary:	VA driver for Intel G45 and HD Graphics family older than Broadwell
+Summary(pl.UTF-8):	Sterownik VA do kart Intela z rodziny G45 i HD Graphics starszych niż Broadwell
+Name:		libva-driver-intel-i965
 Version:	2.4.1
 Release:	1
 License:	MIT
@@ -33,11 +33,11 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 libva-driver-intel is the VA-API implementation for Intel G45 chipsets
-and Intel HD Graphics for Intel Core processor family.
+and Intel HD Graphics for Intel Core processor family older than Broadwell.
 
 %description -l pl.UTF-8
 libva-driver-intel to implementacja VA-API dla układów Intel G45 oraz
-Intel HD Graphics przeznaczonych dla rodziny procesorów Intel Core.
+Intel HD Graphics przeznaczonych dla rodziny procesorów Intel Core starszych niż Broadwell.
 
 %prep
 %setup -q -n intel-vaapi-driver-%{version}
