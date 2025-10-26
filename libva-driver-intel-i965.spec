@@ -34,36 +34,40 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 libva-driver-intel is the VA-API implementation for Intel G45 chipsets
-and Intel HD Graphics for Intel Core processor family older than Broadwell.
+and Intel HD Graphics for Intel Core processor family older than
+Broadwell.
 
 Supported Platforms:
-
 - G45 (CTG): Cantiga, Intel GMA 4500MHD (GM45)
-- ILK (5.x): Ironlake, Intel HD Graphics for 2010 Intel Core processor family
-- SNB (6.x): Sandybridge, Intel HD Graphics for 2011 Intel Core processor family
+- ILK (5.x): Ironlake, Intel HD Graphics for 2010 Intel Core processor
+  family
+- SNB (6.x): Sandybridge, Intel HD Graphics for 2011 Intel Core
+  processor family
 - IVB (7.0): Ivybridge
 - HSW (7.5): Haswell
 - CHV (8.0 LP): Cherryview/Braswell
 
-also supported by the iHD driver (libva-driver-intel >= 25.2.6) which should be used
+also supported by the iHD driver (libva-driver-intel >= 25.2.6, which
+should be used instead):
 - BDW (8.0): Broadwell
 - SKL (9.0): Skylake
 - KBL (9.5): Kabylake
 
 %description -l pl.UTF-8
 libva-driver-intel to implementacja VA-API dla układów Intel G45 oraz
-Intel HD Graphics przeznaczonych dla rodziny procesorów Intel Core starszych niż Broadwell.
+Intel HD Graphics przeznaczonych dla rodziny procesorów Intel Core
+starszych niż Broadwell.
 
-Wspierane platformy:
-
-- G45 (CTG): Cantiga, Intel GMA 4500MHD (GM45)
-- ILK (5.x): Ironlake, Intel HD Graphics for 2010 Intel Core processor family
-- SNB (6.x): Sandybridge, Intel HD Graphics for 2011 Intel Core processor family
+Obsługiwane platformy:
+- G45 (CTG): Cantiga - Intel GMA 4500MHD (GM45)
+- ILK (5.x): Ironlake - Intel HD Graphics dla Intel Core 2010
+- SNB (6.x): Sandybridge - Intel HD Graphics dla Intel Core 2011
 - IVB (7.0): Ivybridge
 - HSW (7.5): Haswell
 - CHV (8.0 LP): Cherryview/Braswell
 
-także wspierane przez iHD driver (libva-driver-intel >= 25.2.6), który powinien być używany
+obsługiwane także przez sterownik iHD (libva-driver-intel >= 25.2.6,
+który powinien być używany zamiast tego):
 - BDW (8.0): Broadwell
 - SKL (9.0): Skylake
 - KBL (9.5): Kabylake
