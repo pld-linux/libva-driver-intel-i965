@@ -29,7 +29,7 @@ BuildRequires:	xorg-lib-libXfixes-devel
 Requires:	libdrm >= 2.4.52
 Requires:	libva >= %{libva_ver}
 Requires:	wayland >= 1.11.0
-Conflicts:	libva-driver-intel < 25.2.6
+Obsoletes:	libva-driver-intel < 2.5
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
