@@ -2,13 +2,13 @@
 Summary:	VA driver for Intel G45 and HD Graphics family older than Broadwell
 Summary(pl.UTF-8):	Sterownik VA do kart Intela z rodziny G45 i HD Graphics starszych niż Broadwell
 Name:		libva-driver-intel-i965
-Version:	2.4.4
+Version:	2.4.5
 Release:	1
 License:	MIT
 Group:		Libraries
 #Source0Download: https://github.com/irql-notlessorequal/intel-vaapi-driver/releases
 Source0:	https://github.com/irql-notlessorequal/intel-vaapi-driver/archive/refs/tags/%{version}/intel-vaapi-driver-%{version}.tar.gz
-# Source0-md5:	d5b76075800fc6220f265fdf29f2925c
+# Source0-md5:	fec5772cb8914da9ece43b03331ffb29
 URL:		https://01.org/linuxmedia
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake >= 1:1.9
@@ -100,5 +100,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS NEWS README.md SECURITY.md
-%attr(755,root,root) %{_libdir}/libva/dri/i965_drv_video.so
+%doc AUTHORS LICENSE NEWS README README.md SECURITY.md
+%{_libdir}/libva/dri/i965_drv_video.so
